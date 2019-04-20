@@ -1,0 +1,92 @@
+autostart = False
+version = 0.8.3
+[127.0.0.1:7200]
+    workingdir = C:\Users\asus\AppData\Local\Temp
+    udp = 10000
+    [[3640]]
+        image = D:\ccnp\C3640-IK.BIN
+        idlepc = 0x605a5ff4
+        sparsemem = True
+        ghostios = True
+        chassis = 3640
+    [[ROUTER R4]]
+        model = 3640
+        console = 4004
+        aux = 2504
+        slot0 = NM-4E
+        e0/0 = R3 e0/1
+        e0/1 = R2 e0/0
+        x = 172.0
+        y = -64.0
+        z = 1.0
+    [[ROUTER R1]]
+        model = 3640
+        console = 4001
+        aux = 2501
+        slot0 = NM-4E
+        e0/0 = R2 e0/1
+        e0/1 = R3 e0/0
+        x = -277.0
+        y = -73.0
+        z = 1.0
+    [[ROUTER R2]]
+        model = 3640
+        console = 4002
+        aux = 2502
+        slot0 = NM-4E
+        e0/0 = R4 e0/1
+        e0/1 = R1 e0/0
+        x = -59.0
+        y = -171.0
+        z = 1.0
+    [[ROUTER R3]]
+        model = 3640
+        console = 4003
+        aux = 2503
+        slot0 = NM-4E
+        e0/0 = R1 e0/1
+        e0/1 = R4 e0/0
+        x = -64.0
+        y = 51.0
+        z = 1.0
+[GNS3-DATA]
+    [[NOTE 1]]
+        text = "e0/0"
+        x = -2.95805639582
+        y = 39.5219342607
+        interface = R4 e0/0
+    [[NOTE 2]]
+        text = "e0/1"
+        x = -3.295347642
+        y = 5.18786927405
+        interface = R4 e0/1
+    [[NOTE 3]]
+        text = "e0/0"
+        x = -1.56880179848
+        y = 1.87543932858
+        interface = R3 e0/0
+    [[NOTE 4]]
+        text = "e0/1"
+        x = 68.9580563958
+        y = 4.47806573933
+        interface = R3 e0/1
+    [[NOTE 5]]
+        text = "e0/0"
+        x = 69.295347642
+        y = 38.8121307259
+        interface = R2 e0/0
+    [[NOTE 6]]
+        text = "e0/1"
+        x = -3.48312027084
+        y = 38.4006687456
+        interface = R2 e0/1
+    [[NOTE 7]]
+        text = "e0/1"
+        x = 67.5688017985
+        y = 42.1245606714
+        interface = R1 e0/1
+    [[NOTE 8]]
+        text = "e0/0"
+        x = 69.4831202708
+        y = 5.59933125439
+        interface = R1 e0/0
