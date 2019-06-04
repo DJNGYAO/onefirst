@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<style>
+    body{
+        font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+    color: #333;
+    background-color: #fff;
+    min-width: 1226px;
+    }
+
+   .homehero{
+    position: relative;
+    z-index: 10;
+   }
+   
+   .container{
+    width: 1226px;
+    margin-right: auto;
+    margin-left: auto;
+   }
+    .homesub{
+        margin-top: 14px;
+    }
+
+    .row{
+        margin-left: -14px;
+    }
+
+    .span4{
+        width: 234px;
+        float: left;
+    margin-left: 14px;
+    min-height: 1px;
+    }
+
+    .homelist{
+        margin: 0;
+    padding: 3px;
+    list-style-type: none;
+    font-size: 12px;
+    text-align: center;
+    background: #5f5750;
+    }
+
+    ul{
+        display: block;
+        margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    }
+
+    .span16{
+        width: 978px;
+        float: left;
+    margin-left: 14px;
+    min-height: 1px;
+    }
+
+    .homepromolist{
+        margin: 0;
+    padding: 0;
+    list-style-type: none;
+    }
+ 
+   .homepromolist li.first{
+    margin-left: 0;
+   }
+
+   .homepromolist li{
+    float: left;
+    width: 316px;
+    height: 170px;
+    transition: box-shadow .2s linear;
+   }
+
+   li{
+    display: list-item;
+    text-align: -webkit-match-parent;
+   }
+
+   .homepromolist{
+    list-style-type: none;
+   }
+
+   .homepromolist a{
+    display: block;
+    height: 170px;
+   }
+
+   a{
+    color: #757575;
+    text-decoration: none;
+   }
+    
+   a:-webkit-any-link {
+    cursor: pointer; 
+   }
+
+   li{
+    text-align: -webkit-match-parent;
+   }
+
+   .homepromolist img{
+    width: 316px;
+    height: 170px;
+   }
+
+    img{
+        border: 0; 
+    }
+
+    .homepromolist li{
+        float: left;
+    width: 316px;
+    height: 170px;
+    margin-left: 15px;
+    transition: box-shadow .2s linear;
+    }
+
+    .homelist a{
+        display: block;
+    padding-top: 18px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: rgba(255,255,255,0.7);
+    transition: color .2s;
+    }
+
+   .homelist i{
+    display: block;
+    height: 24px;
+    margin-bottom: 4px;
+    font-size: 24px;
+    line-height: 24px;
+   }
+
+   .iconfont{
+    font-family: "iconfont" !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+   
+   }
+
+   .homelist li{
+    position: relative;
+    float: left;
+    width: 70px;
+    height: 82px;
+    padding: 0 3px;
+   }
+
+</style>
+
+</head>
+<body>
+    <div class="homehero container">
+    <div class="homesub row">
+      <div class="span4">
+          <ul class="homelist">
+          <li class="expo top left">
+          <a>
+           <i class="iconfont"> </i>
+           选购手机
+          </a>
+          </li>top left
+
+          <li class="expo top">
+            <a> 
+            <i class="iconfont"></i>
+      企业团购
+            </a>
+          </li>top
+          </ul>homelist
+      </div>span4
+
+<div class="span16" id="homePromo">
+<ul class="homepromolist clearfix">
+<li class="first">
+ <a class="item exposure">
+    <img alt="红米7 699" src="pic1.jpeg"  srcset="pic1.jpeg">
+ 
+ </a>
+</li>first
+
+<li>
+<a class="item exposure">
+<img alt="note7常规" src="pic2.jpg"  srcset="pic2.jpg">
+
+    </a>
+</li>secord
+
+
+
+</ul>homepromolist
+</div>span16
+
+    </div>homesub row
+    </div>homehero container
+</body>
+</html>
